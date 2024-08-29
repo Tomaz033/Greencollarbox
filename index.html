@@ -3,42 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>GreenBox Collar - Página Ejemplo</title>
+    <!-- Tailwind CSS para el diseño -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>¡Bienvenido a mi página web!</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca de</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+<body class="bg-white text-gray-800 font-sans antialiased">
+    <header class="bg-green-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">GreenBox Collar</h1>
+            <p class="mt-2">La solución inteligente para el cuidado de tu mascota</p>
+        </div>
     </header>
 
-    <main>
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Esta es la sección de inicio de mi página web. ¡Explora y disfruta!</p>
+    <main class="container mx-auto p-6">
+        <!-- Sección de imagen principal o video -->
+        <section class="my-10 text-center">
+            <img src="imagen-principal.jpg" alt="Imagen del Producto" class="w-full max-w-2xl mx-auto rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold mt-8">Conecta con tu mascota como nunca antes</h2>
+            <p class="mt-4 text-lg text-gray-700">GreenBox Collar te ofrece seguimiento en tiempo real, monitoreo de salud, y más. Todo en un dispositivo compacto y fácil de usar.</p>
+            <a href="#comprar" class="mt-6 inline-block bg-green-600 text-white py-3 px-6 rounded-lg shadow hover:bg-green-700 transition duration-200">Comprar Ahora</a>
         </section>
 
-        <section id="acerca">
-            <h2>Acerca de</h2>
-            <p>Esta página web fue creada como ejemplo para mostrar cómo usar GitHub Pages.</p>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme a través de mi correo: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+        <!-- Sección de características -->
+        <section class="my-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                <img src="icono1.png" alt="Icono 1" class="mx-auto w-16 mb-4">
+                <h3 class="text-2xl font-bold">Seguimiento en Tiempo Real</h3>
+                <p class="mt-2 text-gray-600">Localiza a tu mascota en cualquier momento con tecnología GPS avanzada.</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                <img src="icono2.png" alt="Icono 2" class="mx-auto w-16 mb-4">
+                <h3 class="text-2xl font-bold">Monitoreo de Salud</h3>
+                <p class="mt-2 text-gray-600">Controla el ritmo cardíaco y la actividad diaria para un mejor cuidado.</p>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md text-center">
+                <img src="icono3.png" alt="Icono 3" class="mx-auto w-16 mb-4">
+                <h3 class="text-2xl font-bold">Resistente al Agua</h3>
+                <p class="mt-2 text-gray-600">Diseñado para durar en cualquier clima o situación.</p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    <footer class="bg-gray-100 py-6 mt-10">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-600">&copy; 2024 GreenBox Collar. Todos los derechos reservados.</p>
+        </div>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
